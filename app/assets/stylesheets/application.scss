@@ -11,8 +11,13 @@
  * file per style scope.
  *
  */
-
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,700,400italic);
 @import "bootstrap-import";
+
+body {
+	font-family: 'Arimo', Helvetica, Arial, sans-serif;
+}
+
 @import "home";
 
 /*after application.css*/

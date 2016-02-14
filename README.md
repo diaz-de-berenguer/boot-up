@@ -1,3 +1,11 @@
 ## Boot-up
 
-A nice looking landing page for an imaginary bike shop.
+Responsive landing page for an imaginary bike shop.
+
+#### Bootstrap
+
+- The layout was built using Bootstrap.
+
+#### Google Fonts
+
+- The font used is 'Arimo'
