@@ -1,1 +1,134 @@
-Hola Mundo
+<header>
+	
+</header>
+<div class="main">
+	<div class="page" id="what">
+		<div class="content container">
+			<h2>What we stand for.</h2>
+			<p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex!Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox.</p>
+
+			<p>Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs!</p>
+		</div><!-- content -->
+	</div><!-- page -->
+
+	<div class="page" id="services">
+		<div class="content container">
+			<h2>Our Services</h2>
+			<div class="row">
+				<article class="service col-sm-4">
+					<%= image_tag 'newbike-icon.png' %>
+					<h3>New Bikes</h3>
+
+				</article>
+				<article class="service col-sm-4">
+					<%= image_tag 'usedbike-icon.png' %>
+					<h3>Used Bikes</h3>
+
+				</article>
+				<article class="service col-sm-4">
+					<%= image_tag 'advice-icon.png' %>
+					<h3>Advice</h3>
+
+				</article>
+				<article class="service col-sm-4">
+					<%= image_tag 'tuneup-icon.png' %>
+					<h3>Tune-ups</h3>
+
+				</article>
+				<article class="service col-sm-4">
+					<%= image_tag 'mrg-icon.png' %>
+					<h3>Marital Counsel</h3>
+
+				</article>
+				<article class="service col-sm-4">
+					<%= image_tag 'wrench-icon.png' %>
+					<h3>Repairs</h3>
+
+				</article>
+			</div>
+		</div><!-- content -->
+	</div><!-- services -->
+
+	<div class="page" id="meet">
+		<div class="content container">
+			<div class="row">
+
+				<h2>Meet the crew</h2>
+				<div class="crew col-sm-4">
+					<%= image_tag 'Lance.png', class: "crew-picture" %>
+					<h3>Lance</h3>
+					<p>Lance is an American former professional road racing cyclist. He is the 1993 Elite Men's Road Race World Champion, and he had won the Tour de France seven consecutive times from 1999 to 2005, but was stripped of his Tour de France victories in 2012 after a protracted doping scandal.</p>
+				</div>
+
+				<div class="crew col-sm-4">
+					<%= image_tag 'Dave.png', class: "crew-picture" %>
+					<h3>Dave</h3>
+					<p>David was an American BMX rider who later competed in rallycross racing. Mirra held the record for most X Games medals until being passed by Bob Burnquist in 2013, and medalled in every X Games from when they started in 1995 up to 2009</p>
+				</div>
+
+				<div class="crew col-sm-4">
+					<%= image_tag 'Chewie.png', class: "crew-picture" %>
+					<h3>Chewie</h3>
+					<p>Chewbacca is a Wookiee, a tall, hirsute biped and intelligent species from the planet Kashyyyk. Chewbacca is the loyal friend and associate of Han Solo, and serves as co-pilot on Solo's spaceship, the Millennium Falcon.</p>
+				</div>
+				
+			</div><!-- row -->
+		</div><!-- content -->
+	</div><!-- page -->
+
+	<div class="page" id="testimonials">
+		<div class="content container">
+			<h2>Testimonials</h2>
+			<div class="row">
+
+				<blockquote id="quote-a" class="col-sm-6">
+					<div class="quote">
+						<span class="intro">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there</span>
+						<span class="more">live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</span>
+						<span class="customer">Nicolas Léonard Sadi Carnot</span>
+					</div>
+				</blockquote>
+
+				<blockquote id="quote-s" class="col-sm-6">
+					<div class="quote">
+						<span class="intro">It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing </span>
+						<span class="more">has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</span>
+						<span class="customer">George Brayton</span>
+					</div>
+				</blockquote>
+			</div><!-- row -->
+			<div class="row">
+				<blockquote id="quote-d" class="col-sm-6">
+					<div class="quote">
+						<span class="intro">The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild</span>
+						<span class="more">Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. </span>
+						<span class="customer">William John Macquorn Rankine</span>
+					</div>
+				</blockquote>
+
+				<blockquote id="quote-f" class="col-sm-6">
+					<div class="quote">
+						<span class="intro">When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the</span>
+						<span class="more">headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.</span>
+						<span class="customer">Nikolaus Otto</span>
+					</div>
+				</blockquote>
+
+			</div><!-- row -->
+		</div><!-- content -->
+	</div><!-- page -->
+
+</div><!-- main -->
+
+<footer>
+	<div class="content container">
+		<div class="call">More information</div>
+		<nav>
+			<ul>
+				<li><%= link_to "About Us", '#' %></li>
+				<li><%= link_to "Contact", '#' %></li>
+			</ul>
+		</nav>
+		<p>created by dd_de_b, <%= link_to 'github repo', 'https://github.com/diaz-de-berenguer/boot-up' %></p>
+	</div><!-- content -->
+</footer>
