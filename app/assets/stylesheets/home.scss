@@ -3,8 +3,9 @@ img {
 	background-color: black;
 }
 
-img .crew-picture {
-	border-radius: 25px;
+img.crew-picture {
+	border-radius: 2em;
+	max-width: 10em;
 }
 
 .navbar {
