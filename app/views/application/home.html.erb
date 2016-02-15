@@ -20,12 +20,25 @@
 					<li><%= link_to 'Why', "#testimonials" %></li>
 				</ul>
 			</div><!-- collapse -->
-		</div>
+		</div><!-- container -->
 	</nav>
-	<%= image_tag 'bg-1.jpg' %>
-	<% # image_tag 'bg-2.jpg' %>
-	<% # image_tag 'bg-3.jpg' %>
-	<% # image_tag 'bg-4.jpg' %>
+
+	<div class="carousel slide" data-ride="carousel" id="header">
+		<div class="carousel-inner">
+			<div class="item active">
+				<%= image_tag 'bg-1.jpg' %>
+			</div>
+			<div class="item">
+				<%= image_tag 'bg-2.jpg' %>
+			</div>
+			<div class="item">
+				<%= image_tag 'bg-3.jpg' %>
+			</div>
+			<div class="item">
+				<%= image_tag 'bg-4.jpg' %>
+			</div>
+		</div><!-- carousel inner -->
+	</div><!-- carousel -->
 
 </header>
 <div class="main">
