@@ -147,15 +147,22 @@
 
 </div><!-- main -->
 
-<footer>
+<footer class="navbar-footer">
 	<div class="content container">
-		<div class="call">More information</div>
-		<nav>
-			<ul>
-				<li><%= link_to "About Us", '#' %></li>
-				<li><%= link_to "Contact", '#' %></li>
-			</ul>
-		</nav>
-		<p>created by dd_de_b, <%= link_to 'github repo', 'https://github.com/diaz-de-berenguer/boot-up' %></p>
+		<div class="row">
+			<div class="col-sm-6">
+				<nav class="navbar" role="navigation">
+					<div class="more">More information:</div>
+					<ul class="nav nav-stacked">
+						<li><%= link_to "About Us", '#' %></li>
+						<li><%= link_to "Contact", '#' %></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="created-by col-sm-6">
+				<p>created by dd_de_b, <%= link_to 'github repo', 'https://github.com/diaz-de-berenguer/boot-up' %></p>		
+			</div>
+		</div><!-- row -->
 	</div><!-- content -->
 </footer>

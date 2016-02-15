@@ -10,3 +10,22 @@ img .crew-picture {
 .navbar {
 	border-radius: 0;
 }
+
+.created-by {
+	text-align: right;
+	padding-top: 6em;
+}
+
+.navbar-footer {
+	padding-top: 3em;
+	padding-bottom: 2em;
+	background-color: #222;
+	color: #888;
+	box-shadow: -2px -2px 8px #111 inset;
+	a {
+		color: #bbb;
+	}
+	.more {
+		padding-bottom: 1em;
+	}
+}
