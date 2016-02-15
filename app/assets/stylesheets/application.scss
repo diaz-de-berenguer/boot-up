@@ -11,11 +11,15 @@
  * file per style scope.
  *
  */
-@import url(https://fonts.googleapis.com/css?family=Arimo:400,700,400italic);
 @import "bootstrap-import";
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import "variables";
 
 body {
 	font-family: 'Arimo', Helvetica, Arial, sans-serif;
+	position: relative;
+	color: $body-font-color;
 }
 
 @import "home";

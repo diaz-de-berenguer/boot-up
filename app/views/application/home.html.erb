@@ -8,12 +8,15 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-				<%= link_to 'Imaginary Bike Shop', '#top', class: "navbar-brand" %>
+				<%= link_to '#top', class: "navbar-brand" do %>
+					<h2>Imaginary</h2>
+					<h4>Bike Shop</h4>
+				<% end %>
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-					<li><%= link_to "Home", "#top" %></li>
+					<li class="active"><%= link_to "Home", "#top" %></li>
 					<li><%= link_to 'What', "#what" %></li>
 					<li><%= link_to 'How', "#services" %></li>
 					<li><%= link_to 'Who', "#meet" %></li>
@@ -23,8 +26,15 @@
 		</div><!-- container -->
 	</nav>
 
-	<div class="carousel slide" data-ride="carousel" id="header">
-		<div class="carousel-inner">
+	<div id="topside" class="carousel slide" data-ride="carousel" data-interval="false"><!-- carousel paused right now -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#topside" data-slide-to="0" class="active"></li>
+	    <li data-target="#topside" data-slide-to="1"></li>
+	    <li data-target="#topside" data-slide-to="2"></li>
+	    <li data-target="#topside" data-slide-to="3"></li>
+	  </ol>
+
+		<div class="carousel-inner" role="listbox">
 			<div class="item active">
 				<%= image_tag 'bg-1.jpg' %>
 			</div>
@@ -118,7 +128,7 @@
 
 	<div class="page" id="testimonials">
 		<div class="content container">
-			<h2>Testimonials</h2>
+			<h2>Word of mouth</h2>
 			<div class="row">
 
 				<blockquote id="quote-a" class="col-sm-6">

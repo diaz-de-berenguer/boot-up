@@ -8,15 +8,103 @@ img.crew-picture {
 	max-width: 10em;
 }
 
-.navbar {
-	border-radius: 0;
-}
-
 .created-by {
 	text-align: right;
-	padding-top: 6em;
+    padding: 1em 1.3em 0;
 }
 
+// Header
+header {
+	.navbar {
+		padding: 1em 0;
+		border-radius: 0;
+		border: none;
+		background-color: transparent;
+	}
+	.navbar-default .navbar-nav a {
+		color: $body-font-color;
+		font-size: 1.4em;	
+		padding-top: 1em;
+	}
+	.navbar-default .navbar-nav a:hover {
+		color: $title-font-color;
+	}
+	.navbar-default .navbar-nav .active a {
+		background-color: transparent;
+		color: $title-font-color;
+		&:hover {
+			background-color: transparent;
+			color: $title-font-color;
+		}
+	}
+}
+
+// Navbar Brand
+.navbar-default .navbar-brand {
+	padding: 0 2em;
+	color: $title-font-color;
+	h2 {
+		letter-spacing: 0.2em;
+		font-family: 'Lato', sans-serif;
+		box-shadow: 0 5px 5px -5px;
+	    padding: 0 0 0.4em;
+	}
+	h4 {
+		letter-spacing: 0.66em;
+		padding-top: 0.5em;
+	}
+	&:hover {
+		color: transparentize($title-font-color, 0.2);
+	}
+}
+
+// Navbar Toggle
+.navbar-header .navbar-toggle {
+	background-color: $title-font-color;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: $title-font-color;
+}
+.navbar-default .navbar-toggle {
+	border-color: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+@media only screen
+and (max-width: 768px){
+	.navbar-collapse {
+		background-color: #fff;
+	}
+	header .navbar {
+		padding: 0;
+		background-color: #fff;
+		box-shadow: 0 5px 5px -5px $title-font-color;
+
+	}
+	.navbar-default .navbar-brand {
+		padding: 0 2em;
+		color: $title-font-color;
+		h2 {
+			font-size: 1em;
+			float: left;
+			letter-spacing: 0.2em;
+			font-family: 'Lato', sans-serif;
+			box-shadow: none;
+		    padding: 0 0.2em;
+		}
+		h4 {
+			font-size: 1em;
+			float: left;
+		    font-family: 'Lato', sans-serif;
+			letter-spacing: 0.2em;
+			padding-left: 0.4em;
+		}
+	}
+}
+
+// Footer
 .navbar-footer {
 	padding-top: 3em;
 	padding-bottom: 2em;
@@ -28,5 +116,14 @@ img.crew-picture {
 	}
 	.more {
 		padding-bottom: 1em;
+	}
+}
+
+.page {
+	padding: 50px 0;
+	h2 {
+		font-family: 'Lato', sans-serif;
+		text-align: center;
+		margin-bottom: 1.5em;
 	}
 }
