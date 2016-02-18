@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "2.2.1"
+ruby "2.2.3"
 
 # default rails gems
 
@@ -16,6 +16,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # my gems
 
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'puma'
 
 
 group :development, :test do
