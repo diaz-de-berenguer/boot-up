@@ -103,6 +103,22 @@ and (max-width: 768px){
 		}
 	}
 }
+// Pages What
+#what {
+	box-shadow: 0px 3px 3px #777 inset;
+	background-color: #fff;
+	color: $body-font-color;
+	p {
+		padding: 0 8em 2em;
+	}
+}
+
+@media only screen
+and (max-width: 768px){
+	#what p {
+		padding: 0 4em 0;
+	}
+}
 
 // Footer
 .navbar-footer {
