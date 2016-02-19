@@ -5,6 +5,7 @@
 // Header
 header {
 	.navbar {
+	    transition: all 1s ease;
 		padding: 1em 0;
 		border-radius: 0;
 		border: none;
@@ -36,7 +37,7 @@ header {
 		letter-spacing: 0.2em;
 		font-family: 'Poiret One', sans-serif;
 		box-shadow: 0 5px 5px -5px;
-	    padding: 0 0 0.4em;
+	    padding: 0 0 0.6em;
 	}
 	h4 {
 		font-family: 'Lato', sans-serif;
@@ -84,6 +85,7 @@ and (max-width: 768px){
 			font-family: 'Poiret One', sans-serif;
 			box-shadow: none;
 		    padding: 0 0.2em;
+
 		}
 		h4 {
 			font-size: 1em;
@@ -92,6 +94,80 @@ and (max-width: 768px){
 			letter-spacing: 0.2em;
 			padding-left: 0.4em;
 		}
+	}
+}
+
+// Navbar after scrolling
+
+header .past-scroll {
+	padding: 0;
+	background-color: #fff;
+	box-shadow: 0 5px 5px -5px $title-font-color;
+	.navbar-header{
+		.navbar-brand {
+			padding: 0 2em;
+			color: $title-font-color;
+			h2 {
+				font-size: 1em;
+				float: left;
+				letter-spacing: 0.2em;
+				font-family: 'Poiret One', sans-serif;
+				box-shadow: none;
+			    padding: 0 0.2em;
+			}
+			h4 {
+				font-size: 1em;
+				float: left;
+			    font-family: 'Lato', sans-serif;
+				letter-spacing: 0.2em;
+				padding-left: 0.4em;
+			}
+		}		
+	}
+}
+
+// Carousel
+
+header {
+	.full-height{
+		.item {
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			height: 100%;
+			width: 100%;
+		}
+	}
+	.carousel-fade {
+	    .carousel-inner {
+	        .item {
+	            transition-property: opacity;
+	        }
+	        
+	        .item,
+	        .active.left,
+	        .active.right {
+	            opacity: 0;
+	        }
+
+	        .active,
+	        .next.left,
+	        .prev.right {
+	            opacity: 1;
+	        }
+
+	        .next,
+	        .prev,
+	        .active.left,
+	        .active.right {
+	            left: 0;
+	            transform: translate3d(0, 0, 0);
+	        }
+	    }
+
+	    .carousel-control {
+	        z-index: 2;
+	    }
 	}
 }
 
@@ -232,10 +308,11 @@ and (max-width: 768px){
 // page Testimonials
 
 .testimonial-head{
-	// padding-top: 3em;
+	// @include background-image(linear-gradient(#FFF 50%, $page-color-1 100%));
+	padding-top: 3.5em;
 	font-family: 'Poiret One', sans-serif;
 	// border: 1px solid #111;
-	background-color: $page-color-2;
+	// background-color: $page-color-2;
 	h2 {
 		text-align: center;
 		display: block;
@@ -244,12 +321,14 @@ and (max-width: 768px){
 	}
 	.word-of-mouth {
 		// box-shadow: 3px 2px 4px #888;
-		background-color: #FFF;
+		color: #FFF;
+		background-color: $page-color-1;
 		min-width: 20em;
 		max-width: 25%;
 		padding: 0.5em 2em;
 		// border: 1px solid #111;
 		border-top: 1px solid $page-color-2;
+		border-right: 1px solid $page-color-2;
 		@include border-top-radius(1.5em);
 	}
 }
@@ -260,7 +339,7 @@ and (max-width: 768px){
 		margin: 0;
 		padding: 0;
 		border: none;
-		min-height: 20em;
+		min-height: 25em;
 		position: relative;
 	}
 	.quote {
@@ -272,6 +351,7 @@ and (max-width: 768px){
 		right:0;
 		width: 75%;
 		font-weight: 300;
+		font-size: 0.8em;
 		&:hover{
 			background-color: rgba(255,255,255,0.9);
 			.more {
@@ -279,7 +359,7 @@ and (max-width: 768px){
 			font-size: 1em;
 			line-height: 100%;
 			padding-top: 1em;
-		}
+			}
 		}
 		.more {
 			opacity: 0;
@@ -288,6 +368,7 @@ and (max-width: 768px){
 			padding-top: 1em;
 		}
 		.customer {
+			padding-top: 1em;
 			float: right;
 			font-weight: 700;
 		}
