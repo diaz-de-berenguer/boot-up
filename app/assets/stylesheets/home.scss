@@ -34,11 +34,13 @@ header {
 	color: $title-font-color;
 	h2 {
 		letter-spacing: 0.2em;
-		font-family: 'Lato', sans-serif;
+		font-family: 'Poiret One', sans-serif;
 		box-shadow: 0 5px 5px -5px;
 	    padding: 0 0 0.4em;
 	}
 	h4 {
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
 		letter-spacing: 0.66em;
 		padding-top: 0.5em;
 	}
@@ -79,7 +81,7 @@ and (max-width: 768px){
 			font-size: 1em;
 			float: left;
 			letter-spacing: 0.2em;
-			font-family: 'Lato', sans-serif;
+			font-family: 'Poiret One', sans-serif;
 			box-shadow: none;
 		    padding: 0 0.2em;
 		}
@@ -148,7 +150,7 @@ and (max-width: 768px){
 	img {
 		display: block;
 		margin: 0 auto;
-		max-width: 60%;
+		max-width: 50%;
 		&:hover {
 		}
 	}
@@ -188,7 +190,7 @@ and (max-width: 768px){
 // page meet
 
 #meet {
-	box-shadow: 0px -4px 8px -5px #777 inset;
+	// box-shadow: 0px -4px 8px -5px #777 inset;
 	p {
 		font-size: 0.9em;
 		text-align: justify;
@@ -214,12 +216,116 @@ and (max-width: 768px){
 
 @media only screen
 and (max-width: 768px){
+	#meet {
+		img.crew-picture{
+			max-width: 50%;
+		}
+	}
+	.crew-bio {
+		padding: 2em 8em;
+	}
+	p {
+		font-size: 1em;
+	}
+}
+
+// page Testimonials
+
+.testimonial-head{
+	// padding-top: 3em;
+	font-family: 'Poiret One', sans-serif;
+	// border: 1px solid #111;
+	background-color: $page-color-2;
+	h2 {
+		text-align: center;
+		display: block;
+		margin: 0 auto;
+		font-size: 1.7em;
+	}
+	.word-of-mouth {
+		// box-shadow: 3px 2px 4px #888;
+		background-color: #FFF;
+		min-width: 20em;
+		max-width: 25%;
+		padding: 0.5em 2em;
+		// border: 1px solid #111;
+		border-top: 1px solid $page-color-2;
+		@include border-top-radius(1.5em);
+	}
+}
+
+#testimonials-content {
+	padding: 0;
+	blockquote {
+		margin: 0;
+		padding: 0;
+		border: none;
+		min-height: 20em;
+		position: relative;
+	}
+	.quote {
+		@include border-top-radius(1.5em);
+		background-color: rgba(255,255,255,0.6);
+		padding: 1em 5%;
+		position: absolute;
+		bottom: 0;
+		right:0;
+		width: 75%;
+		font-weight: 300;
+		&:hover{
+			background-color: rgba(255,255,255,0.9);
+			.more {
+			opacity: 1;
+			font-size: 1em;
+			line-height: 100%;
+			padding-top: 1em;
+		}
+		}
+		.more {
+			opacity: 0;
+			font-size: 0;
+			line-height: 0;
+			padding-top: 1em;
+		}
+		.customer {
+			float: right;
+			font-weight: 700;
+		}
+	}
+	#quote-a {
+		background: image-url('1.png') no-repeat center center;
+		background-size: cover;
+	}
+	#quote-s {
+		background: image-url('2.jpg') no-repeat center center;
+		background-size: cover;
+
+	}
+	#quote-d {
+		background: image-url('3.jpg') no-repeat center center;
+		background-size: cover;
+
+	}
+	#quote-f{
+		background: image-url('4.jpg') no-repeat center center;
+		background-size: cover;
+
+	}
+
+}
+
+@media only screen
+and (max-width: 768px){
+	.testimonial-head{
+		h2 {
+			font-size: 1.5em;
+		}
+	}
 }
 
 // Footer
 .navbar-footer {
-	padding-top: 3em;
-	padding-bottom: 2em;
+	padding: 3em 4em 2em;
 	background-color: #222;
 	color: #888;
 	box-shadow: -2px -2px 8px #111 inset;
@@ -232,6 +338,13 @@ and (max-width: 768px){
 	.created-by {
 		text-align: right;
 	    padding: 1em 1.3em 0;
+	}
+	.nav > li > a {
+		// border-bottom: 1px solid #888;
+		// border-right: 1px solid #888;
+		&:hover {
+			background-color: rgba(20,20,20,1);
+		}
 	}
 }
 

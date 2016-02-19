@@ -129,11 +129,11 @@
 
 				<div class="crew col-lg-4">
 					<div class="row">
-						<div class="prof-image col-lg-5 col-md-3 col-md-offset-1 col-sm-4 col-xs-6">
+						<div class="prof-image col-lg-5 col-md-3 col-md-offset-1 col-sm-4 col-xs-12">
 							<%= image_tag 'Lance.png', class: "crew-picture" %>
 							
 						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
+						<div class="crew-bio col-lg-6 col-md-6 col-sm-6 col-xs-12">
 							<h3>Lance</h3>
 							<p>Lance is an American former professional road racing cyclist. He is the 1993 Elite Men's Road Race World Champion, and he had won the Tour de France seven consecutive times from 1999 to 2005, but was stripped of his Tour de France victories in 2012 after a protracted doping scandal.</p>
 							
@@ -143,11 +143,11 @@
 
 				<div class="crew col-lg-4">
 					<div class="row">
-						<div class="prof-image col-lg-5 col-md-3 col-md-offset-1 col-sm-4 col-xs-6">
+						<div class="prof-image col-lg-5 col-md-3 col-md-offset-1 col-sm-4 col-xs-12">
 							<%= image_tag 'Dave.png', class: "crew-picture" %>
 							
 						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
+						<div class="crew-bio col-lg-6 col-md-6 col-sm-6 col-xs-12">
 							<h3>Dave</h3>
 							<p>David (R.I.P.) was an American BMX rider who later competed in rallycross racing. Mirra held the record for most X Games medals until being passed by Bob Burnquist in 2013, and medalled in every X Games from when they started in 1995 up to 2009</p>
 							
@@ -157,11 +157,11 @@
 
 				<div class="crew col-lg-4">
 					<div class="row">
-						<div class="prof-image col-lg-5 col-md-3 col-md-offset-1 col-sm-4 col-xs-6">
+						<div class="prof-image col-lg-5 col-md-3 col-md-offset-1 col-sm-4 col-xs-12">
 							<%= image_tag 'Chewie.png', class: "crew-picture" %>
 							
 						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
+						<div class="crew-bio col-lg-6 col-md-6 col-sm-6 col-xs-12">
 							<h3>Chewie</h3>
 							<p>Chewbacca is a Wookiee, a tall, hirsute biped and intelligent species from the planet Kashyyyk. Chewbacca is the loyal friend and associate of Han Solo, and serves as co-pilot on Solo's spaceship, the Millennium Falcon.</p>
 							
@@ -173,40 +173,50 @@
 		</div><!-- content -->
 	</div><!-- page -->
 
-	<div class="page" id="testimonials">
-		<div class="content container">
-			<h2>Word of mouth</h2>
+	<div class="testimonial-head" id="testimonials">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="word-of-mouth">
+					<h2>Word of mouth</h2>
+				</div>
+			</div><!-- row -->
+		</div><!-- container-fluid -->
+	</div><!-- testimonial-head -->
+	
+	<div class="page" id="testimonials-content">
+		<div class="content container-fluid">
+
 			<div class="row">
 
 				<blockquote id="quote-a" class="col-sm-6">
-					<div class="quote">
-						<span class="intro">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there</span>
-						<span class="more">live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</span>
+					<div class="quote pull-right">
+						<span class="intro">Far far away, behind the word mountains, far from the countries</span>
+						<span class="more"> Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</span><br>
 						<span class="customer">Nicolas Léonard Sadi Carnot</span>
 					</div>
 				</blockquote>
 
 				<blockquote id="quote-s" class="col-sm-6">
-					<div class="quote">
-						<span class="intro">It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing </span>
-						<span class="more">has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</span>
+					<div class="quote pull-right">
+						<span class="intro">It is a paradisematic country, in which roasted parts of sentences</span>
+						<span class="more"> fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</span><br>
 						<span class="customer">George Brayton</span>
 					</div>
 				</blockquote>
 			</div><!-- row -->
 			<div class="row">
 				<blockquote id="quote-d" class="col-sm-6">
-					<div class="quote">
-						<span class="intro">The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild</span>
-						<span class="more">Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. </span>
+					<div class="quote pull-right">
+						<span class="intro">The Big Oxmox advised her not to do so, because there were</span>
+						<span class="more"> thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. </span><br>
 						<span class="customer">William John Macquorn Rankine</span>
 					</div>
 				</blockquote>
 
 				<blockquote id="quote-f" class="col-sm-6">
-					<div class="quote">
-						<span class="intro">When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the</span>
-						<span class="more">headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.</span>
+					<div class="quote pull-right">
+						<span class="intro">When she reached the first hills of the Italic Mountains, she had a</span>
+						<span class="more"> last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.</span><br>
 						<span class="customer">Nikolaus Otto</span>
 					</div>
 				</blockquote>
@@ -218,9 +228,9 @@
 </div><!-- main -->
 
 <footer class="navbar-footer">
-	<div class="content container">
+	<div class="content container-fluid">
 		<div class="row">
-			<div class="col-sm-6">
+			<div class="col-sm-3">
 				<nav class="navbar" role="navigation">
 					<div class="more">More information:</div>
 					<ul class="nav nav-stacked">
@@ -230,7 +240,7 @@
 				</nav>
 			</div>
 
-			<div class="created-by col-sm-6">
+			<div class="created-by col-sm-9">
 				<p>created by dd_de_b, <%= link_to 'github repo', 'https://github.com/diaz-de-berenguer/boot-up' %></p>		
 			</div>
 		</div><!-- row -->
