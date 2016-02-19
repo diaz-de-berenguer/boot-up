@@ -54,45 +54,66 @@
 <div class="main">
 	<div class="page" id="what">
 		<div class="content container">
-			<h2>What we stand for.</h2>
-			<p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex!Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox.</p>
-
-			<p>Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs!</p>
+			<div class="row">
+				<div class="col-lg-11 col-lg-offset-1">
+					<h2 class="pull-left">What we stand for.</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-5 col-lg-offset-1">
+					<p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex!Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox.</p>				
+				</div>
+				<div class="col-lg-5">
+					<p>Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs!</p>
+				</div>
+			</div>
 		</div><!-- content -->
 	</div><!-- page -->
 
 	<div class="page" id="services">
 		<div class="content container">
-			<h2>Our Services</h2>
+			<h2>Services</h2>
 			<div class="row">
-				<article class="service col-sm-4">
+				<article class="service col-lg-4 col-sm-6">
 					<%= image_tag 'newbike-icon.png' %>
-					<h3>New Bikes</h3>
+					<div class="h3-class">
+						<h3>New Bikes</h3>
+					</div>
 
 				</article>
-				<article class="service col-sm-4">
+				<article class="service col-lg-4 col-sm-6">
 					<%= image_tag 'usedbike-icon.png' %>
-					<h3>Used Bikes</h3>
+					<div class="h3-class">
+						<h3>Used Bikes</h3>
+					</div>
 
 				</article>
-				<article class="service col-sm-4">
+				<article class="service col-lg-4 col-sm-6">
 					<%= image_tag 'advice-icon.png' %>
-					<h3>Advice</h3>
+					<div class="h3-class">
+						<h3>Advice</h3>
+					</div>
 
 				</article>
-				<article class="service col-sm-4">
+				<article class="service col-lg-4 col-sm-6">
 					<%= image_tag 'tuneup-icon.png' %>
-					<h3>Tune-ups</h3>
+					<div class="h3-class">
+						<h3>Tune-ups</h3>
+					</div>
 
 				</article>
-				<article class="service col-sm-4">
+				<article class="service col-lg-4 col-sm-6">
 					<%= image_tag 'mrg-icon.png' %>
-					<h3>Marital Counsel</h3>
+					<div class="h3-class">
+						<h3>Marital Counsel</h3>
+					</div>
 
 				</article>
-				<article class="service col-sm-4">
+				<article class="service col-lg-4 col-sm-6">
 					<%= image_tag 'wrench-icon.png' %>
-					<h3>Repairs</h3>
+					<div class="h3-class">
+						<h3>Repairs</h3>
+					</div>
 
 				</article>
 			</div>
@@ -102,24 +123,50 @@
 	<div class="page" id="meet">
 		<div class="content container">
 			<div class="row">
-
 				<h2>Meet the crew</h2>
-				<div class="crew col-sm-4">
-					<%= image_tag 'Lance.png', class: "crew-picture" %>
-					<h3>Lance</h3>
-					<p>Lance is an American former professional road racing cyclist. He is the 1993 Elite Men's Road Race World Champion, and he had won the Tour de France seven consecutive times from 1999 to 2005, but was stripped of his Tour de France victories in 2012 after a protracted doping scandal.</p>
+			</div>
+			<div class="row">
+
+				<div class="crew col-lg-4">
+					<div class="row">
+						<div class="prof-image col-lg-5 col-md-3 col-md-offset-1 col-sm-4 col-xs-6">
+							<%= image_tag 'Lance.png', class: "crew-picture" %>
+							
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
+							<h3>Lance</h3>
+							<p>Lance is an American former professional road racing cyclist. He is the 1993 Elite Men's Road Race World Champion, and he had won the Tour de France seven consecutive times from 1999 to 2005, but was stripped of his Tour de France victories in 2012 after a protracted doping scandal.</p>
+							
+						</div>
+					</div>
 				</div>
 
-				<div class="crew col-sm-4">
-					<%= image_tag 'Dave.png', class: "crew-picture" %>
-					<h3>Dave</h3>
-					<p>David was an American BMX rider who later competed in rallycross racing. Mirra held the record for most X Games medals until being passed by Bob Burnquist in 2013, and medalled in every X Games from when they started in 1995 up to 2009</p>
+				<div class="crew col-lg-4">
+					<div class="row">
+						<div class="prof-image col-lg-5 col-md-3 col-md-offset-1 col-sm-4 col-xs-6">
+							<%= image_tag 'Dave.png', class: "crew-picture" %>
+							
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
+							<h3>Dave</h3>
+							<p>David (R.I.P.) was an American BMX rider who later competed in rallycross racing. Mirra held the record for most X Games medals until being passed by Bob Burnquist in 2013, and medalled in every X Games from when they started in 1995 up to 2009</p>
+							
+						</div>
+					</div>
 				</div>
 
-				<div class="crew col-sm-4">
-					<%= image_tag 'Chewie.png', class: "crew-picture" %>
-					<h3>Chewie</h3>
-					<p>Chewbacca is a Wookiee, a tall, hirsute biped and intelligent species from the planet Kashyyyk. Chewbacca is the loyal friend and associate of Han Solo, and serves as co-pilot on Solo's spaceship, the Millennium Falcon.</p>
+				<div class="crew col-lg-4">
+					<div class="row">
+						<div class="prof-image col-lg-5 col-md-3 col-md-offset-1 col-sm-4 col-xs-6">
+							<%= image_tag 'Chewie.png', class: "crew-picture" %>
+							
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
+							<h3>Chewie</h3>
+							<p>Chewbacca is a Wookiee, a tall, hirsute biped and intelligent species from the planet Kashyyyk. Chewbacca is the loyal friend and associate of Han Solo, and serves as co-pilot on Solo's spaceship, the Millennium Falcon.</p>
+							
+						</div>
+					</div>
 				</div>
 				
 			</div><!-- row -->

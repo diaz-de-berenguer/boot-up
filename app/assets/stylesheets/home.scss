@@ -1,17 +1,6 @@
-img {
-	max-width: 200px;
-	background-color: black;
-}
-
-img.crew-picture {
-	border-radius: 2em;
-	max-width: 10em;
-}
-
-.created-by {
-	text-align: right;
-    padding: 1em 1.3em 0;
-}
+// img {
+// 	max-width: 200px;
+// }
 
 // Header
 header {
@@ -103,21 +92,128 @@ and (max-width: 768px){
 		}
 	}
 }
+
+.page {
+	padding: 3em 0;
+	h2 {
+		font-family: 'Poiret One', sans-serif;
+		text-align: center;
+		margin-bottom: 1.5em;
+	}
+}
+
 // Pages What
 #what {
+	.content {
+		padding: 0 3em;
+	}
 	box-shadow: 0px 3px 3px #777 inset;
 	background-color: #fff;
 	color: $body-font-color;
+	padding-left: 0 8em;
+	padding-right: 0 8em;
+	h2 {
+	}
 	p {
-		padding: 0 8em 2em;
+		padding: 0 0 2em;
+		clear: both;
 	}
 }
 
 @media only screen
 and (max-width: 768px){
-	#what p {
-		padding: 0 4em 0;
+	#what {
+		p {
+			padding: 0 0 2em;
+		}
 	}
+}
+
+// services Pages
+#services  {
+	box-shadow: 0px 6px 10px -5px #111 inset;
+	color: #fff;
+	@include background-image(linear-gradient($page-color-2 0, $page-color-1 90%));
+	// background-color: $page-color-1;
+	border-bottom: 1em solid transparentize($title-font-color, 0.1);
+	text-align: center;
+	h2 {
+		font-family: 'Lato';
+		font-weight: 300;
+		// letter-spacing: 0.2em;
+	    padding: 0 0 0.4em;
+	    border-bottom: 1px solid transparentize($title-font-color, 0.1);
+	    // box-shadow: 0px 4px 8px -6px transparentize($title-font-color, 0.1);
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+		max-width: 60%;
+		&:hover {
+		}
+	}
+	h3 {
+		font-family: 'Lato';
+		font-weight: 300;
+		padding: 0.5em 0 1.5em;
+		letter-spacing: 0.2em;
+	}
+}
+
+@media only screen
+and (max-width: 768px){
+	#services  {
+		img {
+			max-width: 80%;
+			float: left;
+			clear: both;
+			padding: 2em;
+		}
+		article.service {
+			display: table;
+		}
+		.h3-class {
+			display: table-cell;
+			vertical-align: middle;
+			width: 60%;
+			text-align: left;
+			h3 {
+				float: left;
+				font-size: 2em;
+			}
+		}
+	}
+}
+
+// page meet
+
+#meet {
+	box-shadow: 0px -4px 8px -5px #777 inset;
+	p {
+		font-size: 0.9em;
+		text-align: justify;
+	}
+	.prof-image {
+		text-align: center;
+	}
+	.crew {
+		padding-top: 2em;
+	h3 {
+		margin-top: 0;
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+	}
+	}
+	img.crew-picture {
+		border-radius: 2em;
+		max-width: 100%;
+		box-shadow: 2px 2px 2px #aaa;
+	}
+
+}
+
+@media only screen
+and (max-width: 768px){
 }
 
 // Footer
@@ -133,13 +229,9 @@ and (max-width: 768px){
 	.more {
 		padding-bottom: 1em;
 	}
-}
-
-.page {
-	padding: 50px 0;
-	h2 {
-		font-family: 'Lato', sans-serif;
-		text-align: center;
-		margin-bottom: 1.5em;
+	.created-by {
+		text-align: right;
+	    padding: 1em 1.3em 0;
 	}
 }
+
